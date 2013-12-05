@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Courses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Course"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Course">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element  minOccurs="1" ref="UID"/>
+        <xs:element minOccurs="1" ref="CourseCCN"/>
+        <xs:element minOccurs="1" ref="CourseSemester"/>
+        <xs:element minOccurs="1" ref="CourseCode"/>
+        <xs:element minOccurs="1"  ref="CourseShortCode"/>
+        <xs:element minOccurs="1"  ref="CourseDepartmentalCode"/>
+        <xs:element minOccurs="1"  ref="CourseTitle"/>
+        <xs:element minOccurs="0" ref="CourseAlternariveTitles"/>
+        <xs:element minOccurs="0" ref="CourseDescriptions"/>
+        <xs:element minOccurs="0" ref="Department"/>
+        <xs:element minOccurs="0" ref="Units"/><xs:element minOccurs="0" ref="CourseFormat"/>
+        <xs:element minOccurs="0" ref="CourseStartDate"/>
+        <xs:element minOccurs="0" ref="CourseEndDate"/>
+        <xs:element minOccurs="0" ref="Sections"/>
+        <xs:element minOccurs="0" ref="Instructors"/>
+        <xs:element minOccurs="0" ref="Readings"/>
+
+        <xs:element minOccurs="0" ref="Grading"/>
+        <xs:element minOccurs="0" ref="Milestones"/>
+        <xs:element minOccurs="0" ref="ClassPerformance"/>
+        <xs:element minOccurs="0" ref="PreviousCourseCCN"/>
+        <xs:element minOccurs="0" ref="FinalExamGroup"/>
+        <xs:element minOccurs="0" ref="Restrictions"/>
+        <xs:element minOccurs="0" ref="Notes"/>
+        <xs:element minOccurs="0" ref="Prerequisites"/>
+        <xs:element minOccurs="0" ref="EquivilantCourses"/>
+        <xs:element minOccurs="0" ref="CourseEntryStatus"/>
+        <xs:sequence minOccurs="0">
+          <xs:element ref="Enrolment"/>
+          <xs:element ref="Fulfilments"/>
+        </xs:sequence>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UID" type="xs:integer"/>
+  <xs:element name="CourseCCN" type="xs:integer"/>
+  <xs:element name="CourseSemester" type="xs:string"/>
+  <xs:element name="CourseCode" type="xs:string"/>
+  <xs:element name="CourseShortCode" type="xs:string"/>
+  <xs:element name="CourseDepartmentalCode" type="xs:string"/>
+  <xs:element name="CourseTitle" type="xs:string"/>
+  <xs:element name="CourseAlternariveTitles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="AlternativeTitle"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlternativeTitle" type="xs:string"/>
+  <xs:element name="CourseDescriptions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="GeneralCatalog"/>
+        <xs:element minOccurs="0" ref="DepartmentDescription"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GeneralCatalog" type="xs:string"/>
+  <xs:element name="DepartmentDescription" type="xs:string"/>
+  <xs:element name="CourseFormat">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="CourseFormatOption"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CourseFormatOption">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="CourseHours"/>
+        <xs:element ref="CourseFormatType"/>
+        <xs:element ref="CourseFormatFrequency"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CourseHours" type="xs:integer"/>
+  <xs:element name="CourseFormatType" type="xs:NCName"/>
+  <xs:element name="CourseFormatFrequency" type="xs:NCName"/>
+  <xs:element name="CourseStartDate" type="xs:date"/>
+  <xs:element name="CourseEndDate" type="xs:date"/>
+  <xs:element name="Sections">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element  ref="Section"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Section">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="SectionTitle"/>
+        <xs:element ref="SectionCode"/>
+        <xs:element ref="SectionShortCode"/>
+        <xs:element ref="SectionCCN"/>
+        <xs:element ref="SectionType"/>
+        <xs:element ref="SectionInstructor"/>
+        <xs:element ref="SectionSchedule"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SectionTitle" type="xs:string"/>
+  <xs:element name="SectionCode" type="xs:string"/>
+  <xs:element name="SectionShortCode" type="xs:string"/>
+  <xs:element name="SectionCCN" type="xs:integer"/>
+  <xs:element name="SectionType" type="xs:NCName"/>
+  <xs:element name="SectionInstructor" type="xs:string"/>
+  <xs:element name="SectionSchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="SectionScheduleEntry"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SectionScheduleEntry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ScheduledTime"/>
+        <xs:element ref="ScheduledLocation"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduledTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element  ref="Day"/>
+        <xs:element ref="StartTime"/>
+        <xs:element ref="EndTime"/>
+        <xs:element ref="Frequency"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Day" type="xs:NCName"/>
+  <xs:element name="StartTime" type="xs:NMTOKEN"/>
+  <xs:element name="EndTime" type="xs:NMTOKEN"/>
+  <xs:element name="Frequency" type="xs:NCName"/>
+  <xs:element name="ScheduledLocation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Building"/>
+        <xs:element ref="Room"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Building" type="xs:string"/>
+  <xs:element name="Room" type="xs:integer"/>
+  <xs:element name="Instructors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element  ref="Instructor"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Instructor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="InstructorName"/>
+        <xs:element minOccurs="0" ref="InstructorType"/>
+        <xs:element minOccurs="0" ref="InstructorEmail"/>
+        <xs:element minOccurs="0"  ref="InstructorLink"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InstructorName" type="xs:string"/>
+  <xs:element name="InstructorType" type="xs:string"/>
+  <xs:element name="InstructorEmail" type="xs:string"/>
+  <xs:element name="InstructorLink" type="xs:anyURI"/>
+  <xs:element name="Readings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element  ref="ReadingEntry"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReadingEntry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ReadingTitle"/>
+        <xs:element ref="ReadingEdition"/>
+        <xs:element ref="ReadingAuthors"/>
+        <xs:element ref="ReadingType"/>
+        <xs:sequence minOccurs="0">
+          <xs:element minOccurs="0" ref="ReadingISBN"/>
+          <xs:element minOccurs="0" ref="ReadingFormats"/>
+          <xs:element minOccurs="0" ref="ReadingPublisher"/>
+          <xs:element minOccurs="0" ref="ReadingLink"/>
+          <xs:element minOccurs="0" ref="ReadingAvailableInCampusBookstore"/>
+        </xs:sequence>
+        <xs:element minOccurs="0" ref="ReadingRequirementCategory"/>
+        <xs:element minOccurs="0" ref="ReadingEntryNotes"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReadingTitle" type="xs:string"/>
+  <xs:element name="ReadingEdition" type="xs:string"/>
+  <xs:element name="ReadingAuthors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0"  ref="ReadingAuthorName"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReadingAuthorName" type="xs:string"/>
+  <xs:element name="ReadingType" type="xs:NCName"/>
+  <xs:element name="ReadingISBN" type="xs:string"/>
+  <xs:element name="ReadingFormats">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0"  ref="ReadingFormat"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReadingFormat" type="xs:NCName"/>
+  <xs:element name="ReadingPublisher" type="xs:string"/>
+  <xs:element name="ReadingLink">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="ReadingAvailableInCampusBookstore" type="xs:NCName"/>
+  <xs:element name="ReadingRequirementCategory" type="xs:NCName"/>
+  <xs:element name="ReadingEntryNotes" type="xs:string"/>
+  <xs:element name="Units" type="xs:integer"/>
+  <xs:element name="Grading">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="CreditOptions"/>
+        <xs:element minOccurs="0" ref="GradingOptions"/>
+        <xs:element minOccurs="0" ref="GradingBreakdown"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditOptions" type="xs:NCName"/>
+  <xs:element name="GradingOptions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0"  ref="GradingOption"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GradingOption" type="xs:string"/>
+  <xs:element name="GradingBreakdown">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element  ref="GradingElement"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GradingElement">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="GradingElementTitle"/>
+        <xs:element minOccurs="0" ref="GradingElementType"/>
+        <xs:element minOccurs="0" ref="GradingElementWeight"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GradingElementTitle" type="xs:string"/>
+  <xs:element name="GradingElementType" type="xs:string"/>
+  <xs:element name="GradingElementWeight" type="xs:decimal"/>
+  <xs:element name="Milestones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0"  ref="Milestone"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Milestone">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="MilestoneTitle"/>
+        <xs:element minOccurs="0" ref="MilestoneType"/>
+        <xs:element minOccurs="0" ref="MilestoneDueDate"/>
+        <xs:element minOccurs="0" ref="MilestoneDueTime"/>
+        <xs:element minOccurs="0" ref="MilestoneDueLocation"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MilestoneTitle" type="xs:string"/>
+  <xs:element name="MilestoneType" type="xs:string"/>
+  <xs:element name="MilestoneDueDate" type="xs:date"/>
+  <xs:element name="MilestoneDueTime" type="xs:NMTOKEN"/>
+  <xs:element name="MilestoneDueLocation" type="xs:string"/>
+  <xs:element name="ClassPerformance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="Grades"/>
+        <xs:element minOccurs="0" ref="InstructorEvaluation"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Grades">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="StudentGrades"/>
+        <xs:element minOccurs="0" ref="ClassAverage"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StudentGrades">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="StudentGrade"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StudentGrade">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="ClassAverage">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="InstructorEvaluation">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="PreviousCourseCCN" type="xs:string"/>
+  <xs:element name="FinalExamGroup" type="xs:string"/>
+  <xs:element name="Restrictions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="Restriction"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Restriction" type="xs:string"/>
+  <xs:element name="Notes">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="Prerequisites">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0"  ref="Prerequisite"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Prerequisite">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element minOccurs="0" ref="PrerequisiteCourseCode"/>
+        <xs:element minOccurs="0" ref="PrerequisiteNotes"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PrerequisiteCourseCode" type="xs:NCName"/>
+  <xs:element name="PrerequisiteNotes" type="xs:string"/>
+  <xs:element name="EquivilantCourses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="EquivalentCourseCCN"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EquivalentCourseCCN">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="CourseEntryStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="CreatedOn"/>
+        <xs:element minOccurs="0" ref="CreatedBy"/>
+        <xs:element minOccurs="0" ref="ModifiedOn"/>
+        <xs:element minOccurs="0" ref="ModifiedBy"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatedOn" type="xs:date"/>
+  <xs:element name="CreatedBy" type="xs:string"/>
+  <xs:element name="ModifiedOn" type="xs:string"/>
+  <xs:element name="ModifiedBy" type="xs:string"/>
+  <xs:element name="Enrolment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="EnrolmentStatus"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnrolmentStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="EnrolmentUpdate"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnrolmentUpdate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="EnrolmentUpdatedOn"/>
+        <xs:element minOccurs="0" ref="Limit"/>
+        <xs:element minOccurs="0" ref="Enrolled"/>
+        <xs:element minOccurs="0" ref="Waitlist"/>
+        <xs:element minOccurs="0" ref="AvailableSeats"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnrolmentUpdatedOn" type="xs:date"/>
+  <xs:element name="Limit" type="xs:integer"/>
+  <xs:element name="Enrolled" type="xs:integer"/>
+  <xs:element name="Waitlist" type="xs:integer"/>
+  <xs:element name="AvailableSeats" type="xs:integer"/>
+  <xs:element name="Fulfilments">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="Fulfilment"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Fulfilment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="Degree"/>
+        <xs:element minOccurs="0" ref="Department"/>
+        <xs:element minOccurs="0" ref="Requirement"/>
+        <xs:element minOccurs="0" ref="FullfillmentType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Degree" type="xs:NCName"/>
+  <xs:element name="Requirement" type="xs:string"/>
+  <xs:element name="FullfillmentType" type="xs:NCName"/>
+  <xs:element name="Department" type="xs:string"/>
+</xs:schema>

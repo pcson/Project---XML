@@ -1,0 +1,137 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT Courses (Course*)>
+<!ATTLIST Courses
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Course (UID,CourseCCN,CourseSemester,CourseCode,CourseShortCode,
+                  CourseDepartmentalCode,CourseTitle,
+                  CourseAlternariveTitles?,CourseDescriptions,Department,Units,
+                  CourseFormat,CourseStartDate,CourseEndDate,Sections,
+                  Instructors,Readings?,Grading,
+                  Milestones?,ClassPerformance?,PreviousCourseCCN?,
+                  FinalExamGroup?,Restrictions,Notes?,Prerequisites?,
+                  EquivilantCourses?,CourseEntryStatus?,Enrolment?,Fulfilments?)>
+
+<!ELEMENT UID (#PCDATA)>
+<!ELEMENT CourseCCN (#PCDATA)>
+<!ELEMENT CourseSemester (#PCDATA) >
+<!ELEMENT CourseCode (#PCDATA)>
+<!ELEMENT CourseShortCode (#PCDATA)>
+<!ELEMENT CourseDepartmentalCode (#PCDATA)>
+<!ELEMENT CourseTitle (#PCDATA)>
+<!ELEMENT CourseAlternariveTitles (AlternativeTitle*)>
+<!ELEMENT CourseDescriptions (GeneralCatalog?,DepartmentDescription?)>
+<!ELEMENT CourseFormat (CourseFormatOption+)>
+<!ELEMENT CourseStartDate (#PCDATA)>
+<!ELEMENT CourseEndDate (#PCDATA)>
+<!ELEMENT Sections (Section)+>
+<!ELEMENT Instructors (Instructor+)>
+<!ELEMENT Readings (ReadingEntry)*>
+<!ELEMENT Units (#PCDATA)>
+<!ELEMENT Grading (CreditOptions,GradingOptions,GradingBreakdown?)>
+<!ELEMENT Milestones (Milestone)*>
+<!ELEMENT ClassPerformance (Grades,InstructorEvaluation)>
+<!ELEMENT PreviousCourseCCN (#PCDATA)>
+<!ELEMENT FinalExamGroup (#PCDATA)>
+<!ELEMENT Restrictions (Restriction*)>
+<!ELEMENT Notes (#PCDATA)>
+<!ELEMENT Prerequisites (Prerequisite*)>
+<!ELEMENT Prerequisite (PrerequisiteCCN?, PrerequisiteCourseCode?, PrerequisiteNotes?)>
+<!ELEMENT EquivilantCourses (EquivalentCourseCCN*)>
+<!ELEMENT CourseEntryStatus (CreatedOn,CreatedBy,ModifiedOn,ModifiedBy)>
+<!ELEMENT Enrolment (EnrolmentStatus*)>
+<!ELEMENT Fulfilments (Fulfilment*)>
+<!ELEMENT AlternativeTitle (#PCDATA)>
+<!ELEMENT GeneralCatalog (#PCDATA)>
+<!ELEMENT DepartmentDescription (#PCDATA)>
+<!ELEMENT CourseFormatOption (CourseHours,CourseFormatType,
+                             CourseFormatFrequency)>
+
+<!ELEMENT Section (SectionTitle,SectionCode,SectionShortCode, SectionCCN,SectionType,
+                   SectionInstructor,SectionSchedule)>
+<!ELEMENT Instructor (InstructorName, InstructorType, InstructorEmail?, InstructorLink*)>
+<!ELEMENT InstructorEmail (#PCDATA)>
+<!ELEMENT InstructorLink (#PCDATA) >
+<!ELEMENT ReadingEntry (ReadingTitle, ReadingEdition?, ReadingAuthors?,ReadingType?, ReadingISBN?, ReadingFormats?
+                        ,ReadingPublisher?,ReadingLink?,ReadingAvailableInCampusBookstore?,ReadingRequirementCategory, ReadingEntryNotes?)>
+
+<!ELEMENT CreditOptions (#PCDATA)><!--  Rigid|Flexible -->
+<!ELEMENT GradingOptions (GradingOption+)> <!-- Multi value from Graded|Passfail|Auditable-->
+<!ELEMENT GradingBreakdown (GradingElement+)>
+
+<!ELEMENT Milestone (MilestoneTitle,MilestoneType,MilestoneDueDate,
+                     MilestoneDueTime,MilestoneDueLocation)>
+<!ELEMENT Grades (StudentGrades,ClassAverage)>
+<!ELEMENT InstructorEvaluation (#PCDATA)>
+<!ELEMENT Restriction (#PCDATA)>
+<!ELEMENT PrerequisiteCCN (#PCDATA)>          <!-- links to the most recent instance of a prerequisite courses-->
+<!ELEMENT PrerequisiteCourseCode (#PCDATA) >
+<!ELEMENT PrerequisiteNotes (#PCDATA) >
+<!ELEMENT EquivalentCourseCCN  (#PCDATA)>
+<!ELEMENT CreatedOn (#PCDATA)>
+<!ELEMENT CreatedBy (#PCDATA)>
+<!ELEMENT ModifiedOn (#PCDATA)>
+<!ELEMENT ModifiedBy (#PCDATA)>
+<!ELEMENT EnrolmentStatus (EnrolmentUpdate)>
+<!ELEMENT Fulfilment (Degree,Department,Requirement,FullfillmentType)>
+<!ELEMENT CourseHours (#PCDATA)>
+<!ELEMENT CourseFormatType (#PCDATA)>
+<!ELEMENT CourseFormatFrequency (#PCDATA)>
+<!ELEMENT SectionTitle (#PCDATA)>
+<!ELEMENT SectionCode (#PCDATA)>
+<!ELEMENT SectionShortCode (#PCDATA)>
+<!ELEMENT SectionCCN (#PCDATA)>
+<!ELEMENT SectionType (#PCDATA)>
+<!ELEMENT SectionInstructor (#PCDATA)>
+<!ELEMENT SectionSchedule (SectionScheduleEntry)+>
+<!ELEMENT InstructorName (#PCDATA)>
+<!ELEMENT InstructorType (#PCDATA)><!--! Professor, Lecturer, Guest Lecturer, Guest Spaeker  -->
+
+<!ELEMENT ReadingTitle (#PCDATA)>
+<!ELEMENT ReadingEdition (#PCDATA)>
+<!ELEMENT ReadingAuthors (ReadingAuthorName+)>
+<!ELEMENT ReadingISBN (#PCDATA) >
+<!ELEMENT ReadingType (#PCDATA)>
+<!ELEMENT ReadingFormats (ReadingFormat*)>
+<!ELEMENT ReadingPublisher (#PCDATA)>
+<!ELEMENT ReadingFormat (#PCDATA)>
+<!ELEMENT ReadingLink (#PCDATA)>
+<!ELEMENT ReadingRequirementCategory (#PCDATA)> <!-- Required, Recommended-->
+<!ELEMENT ReadingAvailableInCampusBookstore (#PCDATA) >
+<!ELEMENT ReadingEntryNotes (#PCDATA) >
+<!ELEMENT GradingOption (#PCDATA)>
+<!ELEMENT GradingElement (GradingElementTitle,GradingElementType,
+                          GradingElementWeight)>
+<!ELEMENT MilestoneTitle (#PCDATA)>
+<!ELEMENT MilestoneType (#PCDATA)>
+<!ELEMENT MilestoneDueDate (#PCDATA)>
+<!ELEMENT MilestoneDueTime (#PCDATA)>
+<!ELEMENT MilestoneDueLocation (#PCDATA)>
+<!ELEMENT StudentGrades (StudentGrade)>
+<!ELEMENT ClassAverage (#PCDATA)>
+<!ELEMENT EnrolmentUpdate (EnrolmentUpdatedOn,Limit,Enrolled,Waitlist,
+                           AvailableSeats)>
+<!ELEMENT Degree (#PCDATA)>
+<!ELEMENT Requirement (#PCDATA)>
+<!ELEMENT FullfillmentType (#PCDATA)>
+<!ELEMENT SectionScheduleEntry (ScheduledTime,ScheduledLocation)>
+<!ELEMENT ReadingAuthorName (#PCDATA)>
+<!ELEMENT GradingElementTitle (#PCDATA)>
+<!ELEMENT GradingElementType (#PCDATA)> <!-- Assignment|Projects|Class Participation|Mid Term|Final Examl -->
+<!ELEMENT GradingElementWeight (#PCDATA)>
+<!ELEMENT StudentGrade (#PCDATA)>
+<!ELEMENT EnrolmentUpdatedOn (#PCDATA)>
+<!ELEMENT Limit (#PCDATA)>
+<!ELEMENT Enrolled (#PCDATA)>
+<!ELEMENT Waitlist (#PCDATA)>
+<!ELEMENT AvailableSeats (#PCDATA)>
+<!ELEMENT ScheduledTime (Day+,StartTime,EndTime,Frequency)>
+<!ELEMENT ScheduledLocation (Building,Room)>
+<!ELEMENT Day (#PCDATA)>
+<!ELEMENT StartTime (#PCDATA)>
+<!ELEMENT EndTime (#PCDATA)>
+<!ELEMENT Frequency (#PCDATA)>
+<!ELEMENT Building (#PCDATA)>
+<!ELEMENT Room (#PCDATA)>
+<!ELEMENT Department (#PCDATA)>

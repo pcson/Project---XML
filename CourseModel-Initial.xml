@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Courses SYSTEM "CourseModel-Initial.dtd">
+<Courses>
+    <Course>
+        <UID>1</UID>
+        <CourseCCN>41613</CourseCCN>
+        <CourseSemester>Fall 2013</CourseSemester>
+        <CourseCode>INFORMATION 242</CourseCode>
+        <CourseShortCode>INFO 242</CourseShortCode>
+        <CourseDepartmentalCode>i242</CourseDepartmentalCode>
+        <CourseTitle>XML Foundations</CourseTitle>
+        <CourseDescriptions>
+            <GeneralCatalog>The Extensible Markup Language (XML), with its ability to define formal
+                structural and semantic definitions for metadata and information models, is the key
+                enabling technology for information services and document-centric business models
+                that use the Internet and its family of protocols. This course introduces XML
+                syntax, transformations, schema languages and the querying of XML databases. It
+                balances conceptual topics with practical skills for designing, implementing, and
+                handling conceptual models as XML schemas.</GeneralCatalog>
+            <DepartmentDescription>Three hours of lecture. The Extensible Markup Language (XML),
+                with its ability to define formal structural and semantic definitions for metadata
+                and information models, is the key enabling technology for information services and
+                document-centric business models that use the Internet and its family of protocols.
+                This course introduces XML syntax, transformations, schema languages, and the
+                querying of XML databases. It balances conceptual topics with practical skills for
+                designing, implementing, and handling conceptual models as XML
+                schemas.</DepartmentDescription>
+        </CourseDescriptions>
+        <Department>School of Information</Department>
+                <Units>3</Units>
+        <CourseFormat>
+            <CourseFormatOption>
+                <CourseHours>3</CourseHours>
+                <CourseFormatType>Lecture</CourseFormatType>
+                <CourseFormatFrequency>Weekly</CourseFormatFrequency>
+            </CourseFormatOption>
+        </CourseFormat>
+        <CourseStartDate>2013-08-27</CourseStartDate>
+        <CourseEndDate>2013-12-20</CourseEndDate>
+        <Sections>
+            <Section>
+                <SectionTitle>Lecture</SectionTitle>
+                <SectionCode>Lecture01</SectionCode>
+                <SectionShortCode>LEC 01</SectionShortCode>
+                <SectionCCN>41613</SectionCCN>
+                <SectionType>Lecture</SectionType>
+                <SectionInstructor>Erik Wilde</SectionInstructor>
+                <SectionSchedule>
+                    <SectionScheduleEntry>
+                        <ScheduledTime>
+                            <Day>Monday</Day>
+                            <Day>Wednesday</Day>
+                            <StartTime>14:00</StartTime>
+                            <EndTime>15:30</EndTime>
+                            <Frequency>Weekly</Frequency>
+                        </ScheduledTime>
+                        <ScheduledLocation>
+                            <Building>South Hall</Building>
+                            <Room>202</Room>
+                        </ScheduledLocation>
+                    </SectionScheduleEntry>
+              </SectionSchedule>
+            </Section>
+        </Sections>
+        <Instructors>
+            <Instructor>
+                <InstructorName>Erik Wilde</InstructorName>
+                <InstructorType>Professor</InstructorType>
+                <InstructorEmail>dret@ischool.berkeley.edu</InstructorEmail>
+                <InstructorLink></InstructorLink>
+            </Instructor>
+            <Instructor>
+                <InstructorName>Remond Yee</InstructorName>
+                <InstructorType>Guest Professor</InstructorType>
+                <InstructorEmail></InstructorEmail>
+                <InstructorLink></InstructorLink>
+            </Instructor>
+            <Instructor>
+                <InstructorName>Eric C. Kansa</InstructorName>
+                <InstructorType>Guest Speaker</InstructorType>
+                <InstructorEmail>Some Company</InstructorEmail>
+                <InstructorLink></InstructorLink>
+            </Instructor>
+        </Instructors>
+        <!-- What about flex units?-->
+        <Grading>
+            <CreditOptions>Rigid</CreditOptions>
+            
+            <GradingOptions>
+                <GradingOption>Graded</GradingOption>
+                <GradingOption>Pass Fail</GradingOption>
+            </GradingOptions>
+           
+            <GradingBreakdown>
+                <GradingElement>
+                    <GradingElementTitle>Assignments</GradingElementTitle>
+                    <!-- free text -->
+                    <GradingElementType>Assignment</GradingElementType>
+                   
+                    <GradingElementWeight>0.25</GradingElementWeight>
+                </GradingElement>
+                <GradingElement>
+                    <GradingElementTitle>Final Project Report</GradingElementTitle>
+                    <GradingElementType>Project</GradingElementType>
+                    <GradingElementWeight>0.25</GradingElementWeight>
+                </GradingElement>
+                <GradingElement>
+                    <GradingElementTitle>Final Exam (Oral)</GradingElementTitle>
+                    <GradingElementType>Final Exam</GradingElementType>
+                    <GradingElementWeight>0.5</GradingElementWeight>
+                </GradingElement>
+            </GradingBreakdown>
+        </Grading>
+        <Milestones>
+            <Milestone>
+                <MilestoneTitle>Final Exam</MilestoneTitle>
+                <MilestoneType>Final Exam</MilestoneType>
+                <!-- Project, Report, Essay, Midterm, Final Exam -->
+                <MilestoneDueDate>2013-12-17</MilestoneDueDate>
+                <MilestoneDueTime>10:00</MilestoneDueTime>
+                <MilestoneDueLocation>Southall 202</MilestoneDueLocation>
+            </Milestone>
+            <Milestone>
+                <MilestoneTitle>Mid Term Exam</MilestoneTitle>
+                <MilestoneType>Mid TermExam</MilestoneType>
+                <!-- Project, Report, Essay, Midterm, Final Exam -->
+                <MilestoneDueDate>2013-11-05</MilestoneDueDate>
+                <MilestoneDueTime>09:00</MilestoneDueTime>
+                <MilestoneDueLocation>Southall 202</MilestoneDueLocation>
+            </Milestone>
+        </Milestones>
+        <ClassPerformance>
+            <Grades>
+                <StudentGrades>
+                    <StudentGrade/>
+                    <!-- A+ ... F-->
+                </StudentGrades>
+                <ClassAverage/>
+            </Grades>
+            <InstructorEvaluation>
+                <!-- ADD MORE DETAILS HERE IF NECCESSARY -->
+            </InstructorEvaluation>
+        </ClassPerformance>
+        <PreviousCourseCCN>40000</PreviousCourseCCN>
+        <FinalExamGroup>None</FinalExamGroup>
+        <!-- What is this?-->
+        <Restrictions>
+            <!-- need a list of restrictions-->
+            <Restriction>By Category</Restriction>
+        </Restrictions>
+        <Notes/>
+        <Prerequisites>
+        </Prerequisites>
+        <EquivilantCourses>
+            <!-- links to any equivlant courses in the current semester -->
+            <EquivalentCourseCCN/>
+        </EquivilantCourses>
+        <CourseEntryStatus>
+            <CreatedOn>2013-03-08</CreatedOn>
+            <CreatedBy>UNKNOWN</CreatedBy>
+            <ModifiedOn/>
+            <ModifiedBy/>
+        </CourseEntryStatus>
+        <Enrolment>
+            <EnrolmentStatus>
+                <EnrolmentUpdate>
+                    <EnrolmentUpdatedOn>2013-10-09</EnrolmentUpdatedOn>
+                    <Limit>35</Limit>
+                    <Enrolled>17</Enrolled>
+                    <Waitlist>0</Waitlist>
+                    <AvailableSeats>18</AvailableSeats>
+                </EnrolmentUpdate>
+            </EnrolmentStatus>
+        </Enrolment>
+        <Fulfilments>
+            <Fulfilment>
+                <Degree>MIMS</Degree>
+                <Department>School of Information</Department>
+                <Requirement>Technology</Requirement>
+                <FullfillmentType>Major<!--Minor, major...etc--></FullfillmentType>
+            </Fulfilment>
+        </Fulfilments>
+    </Course>
+    <Course>
+        <UID>2</UID>
+        <CourseCCN>41578</CourseCCN>
+        <CourseSemester>Fall 2013</CourseSemester>
+        <CourseCode>INFORMATION 202</CourseCode>
+        <CourseShortCode>INFO 202</CourseShortCode>
+        <CourseDepartmentalCode>i202</CourseDepartmentalCode>
+        <CourseTitle>Information Organization and Retrieval</CourseTitle>
+        <CourseAlternariveTitles>
+            <AlternativeTitle>IOR</AlternativeTitle>
+        </CourseAlternariveTitles>
+        <CourseDescriptions>
+            <GeneralCatalog>Organization, representation, and access to information. Categorization,
+                indexing, and content analysis. Data structures. Design and maintenance of
+                databases, indexes, classification schemes, and thesauri. Use of codes, formats, and
+                standards. Analysis and evaluation of search and navigation
+                techniques.</GeneralCatalog>
+            <DepartmentDescription>Three hours of lecture per week. This course introduces the
+                intellectual foundations of information organization and retrieval: conceptual
+                modeling, semantic representation, vocabulary and metadata design, classification,
+                and standardization, as well as information organization and retrieval practices,
+                technology, and applications, including computational processes for analyzing
+                information in both textual and non-textual formats. Students will learn how
+                information organization and retrieval is carried out by professionals, authors, and
+                users; by individuals in association with other individuals, and as part of the
+                business processes in an enterprise and across enterprises. This is a required
+                introductory course for MIMS Master's students, integrating perspectives and best
+                practices from a wide range of disciplines.</DepartmentDescription>
+        </CourseDescriptions>
+        <Department>School of Information</Department>
+        <Units>4</Units>
+        <CourseFormat>
+            <CourseFormatOption>
+                <CourseHours>3</CourseHours>
+                <CourseFormatType>Lecture</CourseFormatType>
+                <CourseFormatFrequency>Weekly</CourseFormatFrequency>
+            </CourseFormatOption>
+            <CourseFormatOption>
+                <CourseHours>1</CourseHours>
+                <CourseFormatType>Discussion</CourseFormatType>
+                <CourseFormatFrequency>Weekly</CourseFormatFrequency>
+            </CourseFormatOption>
+        </CourseFormat>
+        <CourseStartDate>2013-08-27</CourseStartDate>
+        <CourseEndDate>2013-12-20</CourseEndDate>
+        <Sections>
+            <Section>
+                <SectionTitle>Lecture 001</SectionTitle>
+                <SectionCode>Lecture 001</SectionCode>
+                <SectionShortCode>LEC 001</SectionShortCode>
+                <SectionCCN>41578</SectionCCN>
+                <SectionType>Lecture</SectionType>
+                <SectionInstructor>R J Glushko</SectionInstructor>
+                <SectionSchedule>
+                    <SectionScheduleEntry>
+                        <ScheduledTime>
+                            <Day>Tuesday</Day>
+                            <Day>Thursday</Day>
+                            <StartTime>9:00</StartTime>
+                            <EndTime>10:30</EndTime>
+                            <Frequency>Weekly</Frequency>
+                        </ScheduledTime>
+                        <ScheduledLocation>
+                            <Building>Southall</Building>
+                            <Room>202</Room>
+                        </ScheduledLocation>
+                    </SectionScheduleEntry>
+              </SectionSchedule>
+            </Section>
+            <Section>
+                <SectionTitle>Discussion 01</SectionTitle>
+                <SectionCode>Discussion 001</SectionCode>
+                <SectionShortCode>DIS 001</SectionShortCode>
+                <SectionCCN>41581</SectionCCN>
+                <SectionType>Discussion</SectionType>
+                <SectionInstructor>Fred Chasen</SectionInstructor>
+                <SectionSchedule>
+                    <SectionScheduleEntry>
+                        <ScheduledTime>
+                            <Day>Tuesday</Day>
+                            <StartTime>11:00</StartTime>
+                            <EndTime>12:00</EndTime>
+                            <Frequency>Weekly</Frequency>
+                        </ScheduledTime>
+                        <ScheduledLocation>
+                            <Building>Southall</Building>
+                            <Room>107</Room>
+                        </ScheduledLocation>
+                    </SectionScheduleEntry>
+                </SectionSchedule>
+            </Section>
+            <Section>
+                <SectionTitle>Discussion 02</SectionTitle>
+                <SectionCode>Discussion 002</SectionCode>
+                <SectionShortCode>DIS 002</SectionShortCode>
+                <SectionCCN>41584</SectionCCN>
+                <SectionType>Discussion</SectionType>
+                <SectionInstructor>Ryan Baker</SectionInstructor>
+                <SectionSchedule>
+                    <SectionScheduleEntry>
+                        <ScheduledTime>
+                            <Day>Tuesday</Day>
+                            <StartTime>12:30</StartTime>
+                            <EndTime>13:30</EndTime>
+                            <Frequency>Weekly</Frequency>
+                        </ScheduledTime>
+                        <ScheduledLocation>
+                            <Building>Southall</Building>
+                            <Room>107</Room>
+                        </ScheduledLocation>
+                    </SectionScheduleEntry>
+                </SectionSchedule>
+            </Section>
+            <Section>
+                <SectionTitle>Discussion 03</SectionTitle>
+                <SectionCode>Discussion 003</SectionCode>
+                <SectionShortCode>DIS 003</SectionShortCode>
+                <SectionCCN>41587</SectionCCN>
+                <SectionType>Discussion</SectionType>
+                <SectionInstructor>Colin MacArthur</SectionInstructor>
+                <SectionSchedule>
+                    <SectionScheduleEntry>
+                        <ScheduledTime>
+                            <Day>Tuesday</Day>
+                            <StartTime>14:00</StartTime>
+                            <EndTime>15:00</EndTime>
+                            <Frequency>Weekly</Frequency>
+                        </ScheduledTime>
+                        <ScheduledLocation>
+                            <Building>Southall</Building>
+                            <Room>107</Room>
+                        </ScheduledLocation>
+                    </SectionScheduleEntry>
+                </SectionSchedule>
+            </Section>
+            <Section>
+                <SectionTitle>Discussion 04</SectionTitle>
+                <SectionCode>Discussion 004</SectionCode>
+                <SectionShortCode>DIS 004</SectionShortCode>
+                <SectionCCN>41590</SectionCCN>
+                <SectionType>Discussion</SectionType>
+                <SectionInstructor>Sandra Helsley</SectionInstructor>
+                <SectionSchedule>
+                    <SectionScheduleEntry>
+                        <ScheduledTime>
+                            <Day>Wednesday</Day>
+                            <StartTime>9:30</StartTime>
+                            <EndTime>10:30</EndTime>
+                            <Frequency>Weekly</Frequency>
+                        </ScheduledTime>
+                        <ScheduledLocation>
+                            <Building>Southall</Building>
+                            <Room>107</Room>
+                        </ScheduledLocation>
+                    </SectionScheduleEntry>
+                </SectionSchedule>
+            </Section>
+            <Section>
+                <SectionTitle>Discussion 06</SectionTitle>
+                <SectionCode>Discussion 006</SectionCode>
+                <SectionShortCode>DIS 006</SectionShortCode>
+                <SectionCCN>41596</SectionCCN>
+                <SectionType>Discussion</SectionType>
+                <SectionInstructor>Lisa Jervis</SectionInstructor>
+                <SectionSchedule>
+                    <SectionScheduleEntry>
+                        <ScheduledTime>
+                            <Day>Wednesday</Day>
+                            <StartTime>14:00</StartTime>
+                            <EndTime>15:00</EndTime>
+                            <Frequency>Weekly</Frequency>
+                        </ScheduledTime>
+                        <ScheduledLocation>
+                            <Building>Southall</Building>
+                            <Room>107</Room>
+                        </ScheduledLocation>
+                    </SectionScheduleEntry>
+                </SectionSchedule>
+            </Section>
+        </Sections>
+        <Instructors>
+            <Instructor>
+                <InstructorName>R J Glushko</InstructorName>
+                <InstructorType>Professor</InstructorType>
+                <InstructorEmail>glushko@berkeley.edu</InstructorEmail>
+                <InstructorLink>people.ischool.berkeley.edu/~glushko/</InstructorLink>
+                <InstructorLink>Linke 2</InstructorLink>
+            </Instructor>
+            <Instructor>
+                <InstructorName>Ryan Baker</InstructorName>
+                <InstructorType>TA</InstructorType>
+                <InstructorEmail>ryanfbaker@ischool.berkeley.edu</InstructorEmail>
+                <InstructorLink/>
+            </Instructor>
+            <Instructor>
+                <InstructorName>Fred Chasen</InstructorName>
+                <InstructorType>TA</InstructorType>
+                <InstructorEmail>fchasen@ischool.berkeley.edu</InstructorEmail>
+                <InstructorLink/>
+            </Instructor>
+            <Instructor>
+                <InstructorName>Sandra Helsley</InstructorName>
+                <InstructorType>TA</InstructorType>
+                <InstructorEmail>syh@ischool.berkeley.edu</InstructorEmail>
+                <InstructorLink/>
+            </Instructor>
+            <Instructor>
+                <InstructorName>List Jervis</InstructorName>
+                <InstructorType>TA</InstructorType>
+                <InstructorEmail>lj@ischool.berkeley.edu</InstructorEmail>
+                <InstructorLink/>
+            </Instructor>
+            <Instructor>
+                <InstructorName>Colin MacArthur</InstructorName>
+                <InstructorType>TA</InstructorType>
+                <InstructorEmail>colin@ischool.berkeley.edu</InstructorEmail>
+                <InstructorLink/>
+            </Instructor>
+            <Instructor>
+                <InstructorName>Doctorow</InstructorName>
+                <InstructorType>Guest Spaeker</InstructorType>
+                <InstructorEmail/>
+                <InstructorLink/>
+            </Instructor>
+        </Instructors>
+        <Readings>
+            <ReadingEntry>
+                <ReadingTitle>THE DISCIPLINE OF ORGANIZING</ReadingTitle>
+                <ReadingEdition>1st</ReadingEdition>
+                <ReadingAuthors>
+                    <ReadingAuthorName>Glusko, Robert J.</ReadingAuthorName>
+                </ReadingAuthors>
+                <ReadingType>Book</ReadingType>
+                <ReadingISBN/>
+                <ReadingFormats>
+                    <ReadingFormat>Hardback</ReadingFormat>
+                    <ReadingFormat>Kindle</ReadingFormat>
+                    <ReadingFormat>EPUB</ReadingFormat>
+                </ReadingFormats>
+                <ReadingPublisher>MIT Press, 2013</ReadingPublisher>
+                <ReadingLink/>
+                <ReadingAvailableInCampusBookstore>Yes</ReadingAvailableInCampusBookstore>
+                <ReadingRequirementCategory>Required</ReadingRequirementCategory>
+            </ReadingEntry>
+            <ReadingEntry>
+                <ReadingTitle>DATA AND REALITY</ReadingTitle>
+                <ReadingEdition>3rd</ReadingEdition>
+                <ReadingAuthors>
+                    <ReadingAuthorName>Kent, William</ReadingAuthorName>
+                </ReadingAuthors>
+                <ReadingType>Book</ReadingType>
+                <ReadingISBN>ISBN-10: 1935504215</ReadingISBN>
+                <ReadingFormats>
+                    <ReadingFormat>Hardback</ReadingFormat>
+                    <ReadingFormat>Kindle</ReadingFormat>
+                </ReadingFormats>
+                <ReadingPublisher/>
+                <ReadingLink/>
+                <ReadingAvailableInCampusBookstore>Yes</ReadingAvailableInCampusBookstore>
+                <ReadingRequirementCategory>Required</ReadingRequirementCategory>
+            </ReadingEntry>
+            <ReadingEntry>
+                <ReadingTitle>SEARCH USER INTERFACES</ReadingTitle>
+                <ReadingEdition>2009</ReadingEdition>
+                <ReadingAuthors>
+                    <ReadingAuthorName>Hearst, Marti</ReadingAuthorName>
+                </ReadingAuthors>
+                <ReadingType>Book</ReadingType>
+                <ReadingISBN>ISBN-10: 0521113792</ReadingISBN>
+                <ReadingFormats>
+                    <ReadingFormat>Paperback</ReadingFormat>
+                    <ReadingFormat>Online</ReadingFormat>
+                </ReadingFormats>
+                <ReadingPublisher/>
+                <ReadingLink/>
+                <ReadingAvailableInCampusBookstore>No</ReadingAvailableInCampusBookstore>
+                <ReadingRequirementCategory>Recommended</ReadingRequirementCategory>
+            </ReadingEntry>
+            <ReadingEntry>
+                <ReadingTitle>INTRODUCTION TO INFORMATION RETRIEVAL</ReadingTitle>
+                <ReadingEdition>2008</ReadingEdition>
+                <ReadingAuthors>
+                    <ReadingAuthorName>Manning, Christopher et al.</ReadingAuthorName>
+                </ReadingAuthors>
+                <ReadingType>Book</ReadingType>
+                <ReadingISBN>ISBN-10: 0521865719</ReadingISBN>
+                <ReadingFormats>
+                    <ReadingFormat>Paperback</ReadingFormat>
+                </ReadingFormats>
+                <ReadingPublisher/>
+                <ReadingLink/>
+                <ReadingAvailableInCampusBookstore>No</ReadingAvailableInCampusBookstore>
+                <ReadingRequirementCategory>Recommended</ReadingRequirementCategory>
+            </ReadingEntry>
+        </Readings>
+        <Grading>
+            <CreditOptions>Rigid</CreditOptions>
+            <GradingOptions>
+                <GradingOption>Graded</GradingOption>
+            </GradingOptions>
+            <GradingBreakdown>
+                <GradingElement>
+                    <GradingElementTitle>Assignments</GradingElementTitle>
+                    <GradingElementType>Assignments</GradingElementType>
+                    <GradingElementWeight>0.30</GradingElementWeight>
+                </GradingElement>
+                <GradingElement>
+                    <GradingElementTitle>Mid Term Exam</GradingElementTitle>
+                    <GradingElementType>Mid Term</GradingElementType>
+                    <GradingElementWeight>.02</GradingElementWeight>
+                </GradingElement>
+                <GradingElement>
+                    <GradingElementTitle>Final Exam</GradingElementTitle>
+                    <GradingElementType>Final Exam</GradingElementType>
+                    <GradingElementWeight>0.35</GradingElementWeight>
+                </GradingElement>
+                <GradingElement>
+                    <GradingElementTitle>Class Participation</GradingElementTitle>
+                    <GradingElementType>Class Participation</GradingElementType>
+                    <GradingElementWeight>0.15</GradingElementWeight>
+                </GradingElement>
+            </GradingBreakdown>
+        </Grading>
+        <Milestones/>
+        <PreviousCourseCCN/>
+        <FinalExamGroup/>
+        <Restrictions>
+            <Restriction>iSchool Students Only</Restriction>
+        </Restrictions>
+        <Notes/>
+        <Prerequisites/>
+        <EquivilantCourses/>
+        <CourseEntryStatus>
+            <CreatedOn>2013-10-25</CreatedOn>
+            <CreatedBy>Hassan Jannah</CreatedBy>
+            <ModifiedOn>2013-10-25</ModifiedOn>
+            <ModifiedBy>Hassan Jannah</ModifiedBy>
+        </CourseEntryStatus>
+    </Course>
+    <Course>
+        <UID>3</UID>
+        <CourseCCN>26658</CourseCCN>
+        <CourseSemester>Fall 2013</CourseSemester>
+        <CourseCode>Computer Science 164</CourseCode>
+        <CourseShortCode>COMPSCI 164</CourseShortCode>
+        <CourseDepartmentalCode>CS 164</CourseDepartmentalCode>
+        <CourseTitle>Programming Languages and Compilers</CourseTitle>
+        <CourseAlternariveTitles>
+            <AlternativeTitle>Compilers</AlternativeTitle>
+        </CourseAlternariveTitles>
+        <CourseDescriptions>
+            <GeneralCatalog>Survey of programming languages. The design of modern programming languages. Principles and techniques of scanning, parsing, semantic analysis, and code generation. Implementation of compilers, interpreters, and assemblers. Overview of run-time organization and error handling.</GeneralCatalog>
+        </CourseDescriptions>
+        <Department>Computer Science Department</Department>
+        <Units>4</Units>
+        <CourseFormat>
+            <CourseFormatOption>
+                <CourseHours>3</CourseHours>
+                <CourseFormatType>Lecture</CourseFormatType>
+                <CourseFormatFrequency>Weekly</CourseFormatFrequency>
+            </CourseFormatOption>
+            <CourseFormatOption>
+                <CourseHours>1</CourseHours>
+                <CourseFormatType>Discussion</CourseFormatType>
+                <CourseFormatFrequency>Weekly</CourseFormatFrequency>
+            </CourseFormatOption>
+        </CourseFormat>
+        <CourseStartDate>2013-08-27</CourseStartDate>
+        <CourseEndDate>2013-12-20</CourseEndDate>
+        <Sections>
+            <Section>
+                <SectionTitle>Lecture</SectionTitle>
+                <SectionCode>Lecture 001</SectionCode>
+                <SectionShortCode>LEC 01</SectionShortCode>
+                <SectionCCN>26658</SectionCCN>
+                <SectionType>Lecture</SectionType>
+                <SectionInstructor>Hilfinger, P N</SectionInstructor>
+                <SectionSchedule>
+                    <SectionScheduleEntry>
+                        <ScheduledTime>
+                            <Day>Tuesday</Day>
+                            <Day>Thursday</Day>
+                            <StartTime>17:00</StartTime>
+                            <EndTime>18:30</EndTime>
+                            <Frequency>Weekly</Frequency>
+                        </ScheduledTime>
+                        <ScheduledLocation>
+                            <Building>SODA</Building>
+                            <Room>306</Room>
+                        </ScheduledLocation>
+                    </SectionScheduleEntry>
+                    
+                </SectionSchedule>
+            </Section>
+        <Section>
+            <SectionTitle>Discussion 1</SectionTitle>
+            <SectionCode>Discussion 001</SectionCode>
+            <SectionShortCode>DIS 01</SectionShortCode>
+            <SectionCCN>26664</SectionCCN>
+            <SectionType>Discussion</SectionType>
+            <SectionInstructor>Sklarof, B T</SectionInstructor>
+            <SectionSchedule>
+                <SectionScheduleEntry>
+                    <ScheduledTime>
+                        <Day>Wednesday</Day>
+                        <StartTime>14:00</StartTime>
+                        <EndTime>15:00</EndTime>
+                        <Frequency>Weekly</Frequency>
+                    </ScheduledTime>
+                    <ScheduledLocation>
+                        <Building>Evans</Building>
+                        <Room>6</Room>
+                    </ScheduledLocation>
+                </SectionScheduleEntry>
+            </SectionSchedule>
+        </Section>
+            <Section>
+                <SectionTitle>Discussion 1</SectionTitle>
+                <SectionCode>Discussion 001</SectionCode>
+                <SectionShortCode>DIS 01</SectionShortCode>
+                <SectionCCN>26661</SectionCCN>
+                <SectionType>Discussion</SectionType>
+                <SectionInstructor>Sklarof, B T</SectionInstructor>
+                <SectionSchedule>
+                    <SectionScheduleEntry>
+                        <ScheduledTime>
+                            <Day>Wednesday</Day>
+                            <StartTime>14:00</StartTime>
+                            <EndTime>15:00</EndTime>
+                            <Frequency>Weekly</Frequency>
+                        </ScheduledTime>
+                        <ScheduledLocation>
+                            <Building>Evans</Building>
+                            <Room>6</Room>
+                        </ScheduledLocation>
+                    </SectionScheduleEntry>
+                </SectionSchedule>
+            </Section>
+            <Section>
+                <SectionTitle>Discussion 2</SectionTitle>
+                <SectionCode>Discussion 002</SectionCode>
+                <SectionShortCode>DIS 02</SectionShortCode>
+                <SectionCCN>26664</SectionCCN>
+                <SectionType>Discussion</SectionType>
+                <SectionInstructor>Chen, X</SectionInstructor>
+                <SectionSchedule>
+                    <SectionScheduleEntry>
+                        <ScheduledTime>
+                            <Day>Wednesday</Day>
+                            <StartTime>15:00</StartTime>
+                            <EndTime>16:00</EndTime>
+                            <Frequency>Weekly</Frequency>
+                        </ScheduledTime>
+                        <ScheduledLocation>
+                            <Building>CORY</Building>
+                            <Room>285</Room>
+                        </ScheduledLocation>
+                    </SectionScheduleEntry>
+                </SectionSchedule>
+            </Section>
+            <Section>
+                <SectionTitle>Discussion 3</SectionTitle>
+                <SectionCode>Discussion 003</SectionCode>
+                <SectionShortCode>DIS 03</SectionShortCode>
+                <SectionCCN>26667</SectionCCN>
+                <SectionType>Discussion</SectionType>
+                <SectionInstructor>Sklarof, B T</SectionInstructor>
+                <SectionSchedule>
+                    <SectionScheduleEntry>
+                        <ScheduledTime>
+                            <Day>Thursday</Day>
+                            <StartTime>11:00</StartTime>
+                            <EndTime>12s:00</EndTime>
+                            <Frequency>Weekly</Frequency>
+                        </ScheduledTime>
+                        <ScheduledLocation>
+                            <Building>Evans</Building>
+                            <Room>6</Room>
+                        </ScheduledLocation>
+                    </SectionScheduleEntry>
+                </SectionSchedule>
+            </Section>   
+        </Sections>
+        <Instructors>
+            <Instructor>
+                <InstructorName>Ben Sklaroff</InstructorName>
+                <InstructorType>Professor</InstructorType>
+                <InstructorEmail>cs164-tb@imail.eecs.berkeley.edu</InstructorEmail>
+                <InstructorLink></InstructorLink>
+            </Instructor>
+            <Instructor>
+                <InstructorName>Paul N. Hilfinger</InstructorName>
+                <InstructorType>Professor</InstructorType>
+                <InstructorEmail>Hilfinger@cs.berkeley.edu</InstructorEmail>
+                <InstructorLink></InstructorLink>
+            </Instructor>
+            <Instructor>
+                <InstructorName>Peter Chen</InstructorName>
+                <InstructorType>TA</InstructorType>
+                <InstructorEmail>c.xi@berkeley.edu</InstructorEmail>
+                <InstructorLink></InstructorLink>
+            </Instructor>
+        </Instructors>
+        <Readings>
+            <ReadingEntry>
+                <ReadingTitle>Compilers: Principles, Techniques, and Tools</ReadingTitle>
+                <ReadingEdition/>
+                <ReadingAuthors>
+                    <ReadingAuthorName>Aho</ReadingAuthorName>
+                    <ReadingAuthorName>Sethi</ReadingAuthorName>
+                    <ReadingAuthorName>Ulman</ReadingAuthorName>
+                </ReadingAuthors>
+                <ReadingType>Book</ReadingType>
+                <ReadingRequirementCategory>Recommended</ReadingRequirementCategory>
+                <ReadingEntryNotes>Also known as "The Red Dragon Book"</ReadingEntryNotes>
+            </ReadingEntry>
+        </Readings>
+        <Grading>
+            <CreditOptions>Rigid</CreditOptions>
+            <GradingOptions>
+                <GradingOption>Graded</GradingOption>
+            </GradingOptions>
+            <GradingBreakdown>
+                <GradingElement>
+                    <GradingElementTitle>Assignments</GradingElementTitle>
+                    <GradingElementType>Assignments</GradingElementType>
+                    <GradingElementWeight>0.5</GradingElementWeight>
+                </GradingElement>
+                <GradingElement>
+                    <GradingElementTitle>Mid Term 1</GradingElementTitle>
+                    <GradingElementType>Mid Term</GradingElementType>
+                    <GradingElementWeight>0.2</GradingElementWeight>
+                </GradingElement>
+                <GradingElement>
+                    <GradingElementTitle>Mid Term 2</GradingElementTitle>
+                    <GradingElementType>Mid Term</GradingElementType>
+                    <GradingElementWeight>0.2</GradingElementWeight>
+                </GradingElement>
+                <GradingElement>
+                    <GradingElementTitle>Homeworks and Projects</GradingElementTitle>
+                    <GradingElementType>Assignments</GradingElementType>
+                    <GradingElementWeight>0.1</GradingElementWeight>
+                </GradingElement>
+            </GradingBreakdown>
+        </Grading>
+        <PreviousCourseCCN></PreviousCourseCCN>
+        <Restrictions></Restrictions>
+        <Prerequisites>
+            <Prerequisite>
+                <PrerequisiteCourseCode>CS61B</PrerequisiteCourseCode>
+            </Prerequisite>
+            <Prerequisite>
+                <PrerequisiteCourseCode>CS61C</PrerequisiteCourseCode>
+            </Prerequisite>
+            <Prerequisite>
+                <PrerequisiteNotes>Familiar with JAVA or C++</PrerequisiteNotes>
+            </Prerequisite>
+        </Prerequisites>
+        <EquivilantCourses></EquivilantCourses>
+    </Course>
+    <Course>
+        <UID>5</UID>
+        <CourseCCN>41644</CourseCCN>
+        <CourseSemester>Fall 2013</CourseSemester>
+        <CourseCode>INFORMATION 290A</CourseCode>
+        <CourseShortCode>INFO 290A</CourseShortCode>
+        <CourseDepartmentalCode>i290A</CourseDepartmentalCode>
+        <CourseTitle>Information Technology and Identity: The Future of Storytelling</CourseTitle>
+        <CourseDescriptions>
+            <GeneralCatalog>None</GeneralCatalog>
+            <DepartmentDescription>Mass communications technologies have been profound influencers of human identity,
+                from the printing press and the rise of vernacular political cultures to television and the power of 
+                celebrity. While the Web is still a work in progress, salient characteristics such as the collapse of 
+                distance, the discovery of like-minded groups, and information delivered in short bursts are already 
+                affecting the way people see themselves and the way they consume information. Following an overview 
+                on the relationship of technology with identity and communications, the course will look at the uses 
+                of narrative in news, public relations, advertising, entertainment, and online gaming.</DepartmentDescription>
+        </CourseDescriptions>
+        <Department>School of Information</Department>
+        <Units>1</Units>
+        <CourseFormat>
+            <CourseFormatOption>
+                <CourseHours>1</CourseHours>
+                <CourseFormatType>Lecture</CourseFormatType>
+                <CourseFormatFrequency>Weekly</CourseFormatFrequency>
+            </CourseFormatOption>
+        </CourseFormat>
+        <CourseStartDate>2013-09-09</CourseStartDate>
+        <CourseEndDate>2013-10-07</CourseEndDate>
+        <Sections>
+            <Section>
+                <SectionTitle>Lecture</SectionTitle>
+                <SectionCode>Lecture01</SectionCode>
+                <SectionShortCode>LEC 01</SectionShortCode>
+                <SectionCCN>41644</SectionCCN>
+                <SectionType>Lecture</SectionType>
+                <SectionInstructor>Quentin Hardy</SectionInstructor>
+                <SectionSchedule>
+                    <SectionScheduleEntry>
+                        <ScheduledTime>
+                            <Day>Monday</Day>
+                            <StartTime>15:30</StartTime>
+                            <EndTime>18:30</EndTime>
+                            <Frequency>Weekly</Frequency>
+                        </ScheduledTime>
+                        <ScheduledLocation>
+                            <Building>South Hall</Building>
+                            <Room>210</Room>
+                        </ScheduledLocation>
+                    </SectionScheduleEntry>
+                </SectionSchedule>
+            </Section>
+        </Sections>
+        <Instructors>
+            <Instructor>
+                <InstructorName>Quetin Hardy</InstructorName>
+                <InstructorType>Lecturer</InstructorType>
+                <InstructorEmail>qhardy@gmail.com</InstructorEmail>
+                <InstructorLink></InstructorLink>
+            </Instructor>
+        </Instructors>
+        <!-- What about flex units?-->
+        <Grading>
+            <CreditOptions>Rigid</CreditOptions>
+            
+            <GradingOptions>
+                <GradingOption>Graded</GradingOption>
+                <GradingOption>Pass Fail</GradingOption>
+            </GradingOptions>
+            <GradingBreakdown>
+                <GradingElement>
+                    <GradingElementTitle>Paper</GradingElementTitle>
+                    <!-- free text -->
+                    <GradingElementType>Paper</GradingElementType>
+                    
+                    <GradingElementWeight>1</GradingElementWeight>
+                </GradingElement>
+            </GradingBreakdown>
+        </Grading>
+        <Milestones>
+            <Milestone>
+                <MilestoneTitle>Final Paper</MilestoneTitle>
+                <MilestoneType>Final Paper</MilestoneType>
+                <!-- Project, Report, Essay, Midterm, Final Exam -->
+                <MilestoneDueDate>2013-11-27</MilestoneDueDate>
+                <MilestoneDueTime>00:00</MilestoneDueTime>
+                <MilestoneDueLocation>None</MilestoneDueLocation>
+            </Milestone>
+        </Milestones>
+        <ClassPerformance>
+            <Grades>
+                <StudentGrades>
+                    <StudentGrade/>
+                    <!-- A+ ... F-->
+                </StudentGrades>
+                <ClassAverage/>
+            </Grades>
+            <InstructorEvaluation>
+                <!-- ADD MORE DETAILS HERE IF NECCESSARY -->
+            </InstructorEvaluation>
+        </ClassPerformance>
+        <PreviousCourseCCN>42641</PreviousCourseCCN>
+        <FinalExamGroup>None</FinalExamGroup>
+        <!-- What is this?-->
+        <Restrictions>
+            <!-- need a list of restrictions-->
+            <Restriction>By Category</Restriction>
+        </Restrictions>
+        <Notes/>
+        <Prerequisites>
+            <!-- links to the most recent instance of a prerequisite courses-->
+        </Prerequisites>
+        <EquivilantCourses>
+            <!-- links to any equivlant courses in the current semester -->
+            <EquivalentCourseCCN/>
+        </EquivilantCourses>
+        <CourseEntryStatus>
+            <CreatedOn>2013-03-08</CreatedOn>
+            <CreatedBy>UNKNOWN</CreatedBy>
+            <ModifiedOn/>
+            <ModifiedBy/>
+        </CourseEntryStatus>
+        <Enrolment>
+            <EnrolmentStatus>
+                <EnrolmentUpdate>
+                    <EnrolmentUpdatedOn>2013-10-25</EnrolmentUpdatedOn>
+                    <Limit>45</Limit>
+                    <Enrolled>38</Enrolled>
+                    <Waitlist>3</Waitlist>
+                    <AvailableSeats>7</AvailableSeats>
+                </EnrolmentUpdate>
+            </EnrolmentStatus>
+        </Enrolment>
+        <Fulfilments>
+            <Fulfilment>
+                <Degree>MIMS</Degree>
+                <Department>School of Information</Department>
+                <Requirement>Elective</Requirement>
+                <FullfillmentType>Major<!--Minor, major...etc--></FullfillmentType>
+            </Fulfilment>
+        </Fulfilments>
+    </Course>
+    <Course>
+        <UID>6</UID>
+        <CourseCCN>41620</CourseCCN>
+        <CourseSemester>Fall 2013</CourseSemester>
+        <CourseCode>INFORMATION C262</CourseCode>
+        <CourseShortCode>INFO C262</CourseShortCode>
+        <CourseDepartmentalCode>iC262</CourseDepartmentalCode>
+        <CourseTitle>Theory and Practice of Tangible User Interfaces</CourseTitle>
+        <CourseAlternariveTitles>
+            <AlternativeTitle>Info 290: Theory and Practice of Tangible User Interfaces</AlternativeTitle>
+        </CourseAlternariveTitles>
+        <CourseDescriptions>
+            <GeneralCatalog>None</GeneralCatalog>
+            <DepartmentDescription>This course explores the theory and practice of Tangible User Interfaces,
+                a new approach to Human Computer Interaction that focuses on the physical interaction with 
+                computational media. The topics covered in the course include theoretical framework, design 
+                examples, enabling technologies, and evaluation of Tangible User Interfaces. Students will 
+                design and develop experimental Tangible User Interfaces using physical computing prototyping 
+                tools and write a final project report. Also listed as New Media C262.</DepartmentDescription>
+        </CourseDescriptions>
+        <Department>School of Information</Department>
+        <Units>4</Units>
+        <CourseFormat>
+            <CourseFormatOption>
+                <CourseHours>4</CourseHours>
+                <CourseFormatType>Lecture</CourseFormatType>
+                <CourseFormatFrequency>Weekly</CourseFormatFrequency>
+            </CourseFormatOption>
+        </CourseFormat>
+        <CourseStartDate>2013-08-27</CourseStartDate>
+        <CourseEndDate>2013-12-20</CourseEndDate>
+        <Sections>
+            <Section>
+                <SectionTitle>Lecture</SectionTitle>
+                <SectionCode>Lecture01</SectionCode>
+                <SectionShortCode>LEC 01</SectionShortCode>
+                <SectionCCN>41620</SectionCCN>
+                <SectionType>Lecture</SectionType>
+                <SectionInstructor>Kimiko Ryokai</SectionInstructor>
+                <SectionSchedule>
+                    <SectionScheduleEntry>
+                        <ScheduledTime>
+                            <Day>Monday</Day>
+                            <Day>Wednesday</Day>
+                            <StartTime>14:00</StartTime>
+                            <EndTime>15:30</EndTime>
+                            <Frequency>Weekly</Frequency>
+                        </ScheduledTime>
+                        <ScheduledLocation>
+                            <Building>South Hall</Building>
+                            <Room>210</Room>
+                        </ScheduledLocation>
+                    </SectionScheduleEntry>
+                </SectionSchedule>
+            </Section>
+            <Section>
+                <SectionTitle>Lab</SectionTitle>
+                <SectionCode>Lab101</SectionCode>
+                <SectionShortCode>LAB 101</SectionShortCode>
+                <SectionCCN>41622</SectionCCN>
+                <SectionType>Lab</SectionType>
+                <SectionInstructor>Kimiko Ryokai</SectionInstructor>
+                <SectionSchedule>
+                    <SectionScheduleEntry>
+                        <ScheduledTime>
+                            <Day>Monday</Day>
+                            <StartTime>15:30</StartTime>
+                            <EndTime>16:30</EndTime>
+                            <Frequency>Weekly</Frequency>
+                        </ScheduledTime>
+                        <ScheduledLocation>
+                            <Building>South Hall</Building>
+                            <Room>205</Room>
+                        </ScheduledLocation>
+                    </SectionScheduleEntry>
+                </SectionSchedule>
+            </Section>
+        </Sections>
+        <Instructors>
+            <Instructor>
+                <InstructorName>Kimiko Ryokai</InstructorName>
+                <InstructorType>Professor</InstructorType>
+                <InstructorEmail>kimiko@ischool.berkeley.com</InstructorEmail>
+                <InstructorLink>http://people.ischool.berkeley.edu/~kimiko/</InstructorLink>
+            </Instructor>
+        </Instructors>
+        <!-- What about flex units?-->
+        <Grading>
+            <CreditOptions>Rigid</CreditOptions>
+            
+            <GradingOptions>
+                <GradingOption>Graded</GradingOption>
+                <GradingOption>Pass Fail</GradingOption>
+            </GradingOptions>
+            <GradingBreakdown>
+                <GradingElement>
+                    <GradingElementTitle>Paper</GradingElementTitle>
+                    <!-- free text -->
+                    <GradingElementType>Paper</GradingElementType>
+                    
+                    <GradingElementWeight>1</GradingElementWeight>
+                </GradingElement>
+            </GradingBreakdown>
+        </Grading>
+        <Milestones>
+        </Milestones>
+        <ClassPerformance>
+            <Grades>
+                <StudentGrades>
+                    <StudentGrade/>
+                    <!-- A+ ... F-->
+                </StudentGrades>
+                <ClassAverage/>
+            </Grades>
+            <InstructorEvaluation>
+                <!-- ADD MORE DETAILS HERE IF NECCESSARY -->
+            </InstructorEvaluation>
+        </ClassPerformance>
+        <PreviousCourseCCN>41611</PreviousCourseCCN>
+        <FinalExamGroup>None</FinalExamGroup>
+        <!-- What is this?-->
+        <Restrictions>
+            <!-- need a list of restrictions-->
+            <Restriction>By Category</Restriction>
+        </Restrictions>
+        <Notes/>
+        <Prerequisites>
+            <!-- links to the most recent instance of a prerequisite courses-->
+        </Prerequisites>
+        <EquivilantCourses>
+            <!-- links to any equivlant courses in the current semester -->
+            <EquivalentCourseCCN/>
+        </EquivilantCourses>
+        <CourseEntryStatus>
+            <CreatedOn>2013-03-08</CreatedOn>
+            <CreatedBy>UNKNOWN</CreatedBy>
+            <ModifiedOn/>
+            <ModifiedBy/>
+        </CourseEntryStatus>
+        <Enrolment>
+            <EnrolmentStatus>
+                <EnrolmentUpdate>
+                    <EnrolmentUpdatedOn>2013-10-25</EnrolmentUpdatedOn>
+                    <Limit>25</Limit>
+                    <Enrolled>23</Enrolled>
+                    <Waitlist>0</Waitlist>
+                    <AvailableSeats>2</AvailableSeats>
+                </EnrolmentUpdate>
+            </EnrolmentStatus>
+        </Enrolment>
+        <Fulfilments>
+            <Fulfilment>
+                <Degree>MIMS</Degree>
+                <Department>School of Information</Department>
+                <Requirement>General Course</Requirement>
+                <FullfillmentType>Major<!--Minor, major...etc--></FullfillmentType>
+            </Fulfilment>
+        </Fulfilments>
+    </Course>
+</Courses>
